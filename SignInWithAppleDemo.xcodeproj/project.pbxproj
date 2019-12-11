@@ -14,6 +14,7 @@
 		3DA457DD23A0DD300078B294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA457DC23A0DD300078B294 /* Assets.xcassets */; };
 		3DA457E023A0DD300078B294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA457DE23A0DD300078B294 /* LaunchScreen.storyboard */; };
 		3DA457E323A0DD300078B294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA457E223A0DD300078B294 /* main.m */; };
+		3DA457ED23A0E7DF0078B294 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA457EB23A0E11B0078B294 /* AuthenticationServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3DA457E123A0DD300078B294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DA457E223A0DD300078B294 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DA457E923A0DEB40078B294 /* SignInWithAppleDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleDemo.entitlements; sourceTree = "<group>"; };
+		3DA457EB23A0E11B0078B294 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA457ED23A0E7DF0078B294 /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				3DA457CF23A0DD2B0078B294 /* SignInWithAppleDemo */,
 				3DA457CE23A0DD2B0078B294 /* Products */,
+				3DA457EA23A0E11B0078B294 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +80,14 @@
 				3DA457E223A0DD300078B294 /* main.m */,
 			);
 			path = SignInWithAppleDemo;
+			sourceTree = "<group>";
+		};
+		3DA457EA23A0E11B0078B294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA457EB23A0E11B0078B294 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +308,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F87FYPRFA8;
 				INFOPLIST_FILE = SignInWithAppleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +329,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = F87FYPRFA8;
 				INFOPLIST_FILE = SignInWithAppleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
