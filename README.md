@@ -38,10 +38,10 @@
 
 ## 参考资料
 
-* (介绍文档)[https://developer.apple.com/cn/sign-in-with-apple/get-started/]
-* (API文档)[https://developer.apple.com/documentation/authenticationservices?language=objc]
-* (wwdc Sign In With Apple)[https://developer.apple.com/videos/play/wwdc2019/706]
-* (Sign In With Apple官方Swift源码)[https://docs-assets.developer.apple.com/published/8f9ca51349/AddingTheSignInWithAppleFlowToYourApp.zip]
-* (Human Interface Guidelines-设计规范)[https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/overview/]
-* (证书配置说明-英文)[https://help.apple.com/developer-account/?lang=en#/devde676e696]
+* [介绍文档)](https://developer.apple.com/cn/sign-in-with-apple/get-started/)
+* [API文档](https://developer.apple.com/documentation/authenticationservices?language=objc)
+* [wwdc Sign In With Apple](https://developer.apple.com/videos/play/wwdc2019/706)
+* [Sign In With Apple官方Swift源码](https://docs-assets.developer.apple.com/published/8f9ca51349/AddingTheSignInWithAppleFlowToYourApp.zip)
+* [Human Interface Guidelines-设计规范](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/overview/)
+* [证书配置说明-英文](https://help.apple.com/developer-account/?lang=en#/devde676e696)
 
