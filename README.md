@@ -26,9 +26,34 @@
 * TARGETS->Build Phases->Link Binary With Libraries->AuthenticationServices.framework
 * TARGETS->General->Frameworks,Libraries,and Embedded Content->AuthenticationServices.framework->Do Not Embed
 
+## 证书配置
+
+## 禁止使用情形
+
+不得将“通过 Apple 登录”整合到存在以下情况的网站或 app 中：
+
+* 违反任何法律或者不遵守法律要求；
+* 为以下物品提供服务或交易：
+   * 香烟或烟草制品；
+   * 军火、武器或弹药；
+   * 违禁药品或非法处方管制药品；
+   * 给消费者带来安全风险的物品；
+   * 打算用于从事非法活动的物品；
+   * 色情作品；
+   * 假冒或盗窃的物品；
+* 主要提供或出售吸毒用具或者色情物品或服务；
+* 基于种族、年龄、性别、性别认同、民族、宗教或性取向，而煽动仇恨、暴力或不容忍的情绪；
+* 涉嫌任何形式的欺诈；
+* 侵犯或违反他人知识产权、公开权或隐私权；
+* 以虚假或侮辱性方式展示 Apple 或其产品。
+
+> “通过 Apple 登录”API 只能用于允许用户自愿设置帐户并登录您的 app 或服务，不得另作他用。
+Apple 保留随时以任何理由停用某个网站或 app 中的“通过 Apple 登录”功能的权利。
+
+
 ## 跨平台
 
-* iOS、macOS、tvOS、watchOS、网页
+* iOS、macOS、tvOS、watchOS、网页()
 
 ## 实现流程
 
@@ -38,7 +63,7 @@
 
 ## 参考资料
 
-* [介绍文档)](https://developer.apple.com/cn/sign-in-with-apple/get-started/)
+* [介绍文档](https://developer.apple.com/cn/sign-in-with-apple/get-started/)
 * [API文档](https://developer.apple.com/documentation/authenticationservices?language=objc)
 * [wwdc Sign In With Apple](https://developer.apple.com/videos/play/wwdc2019/706)
 * [Sign In With Apple官方Swift源码](https://docs-assets.developer.apple.com/published/8f9ca51349/AddingTheSignInWithAppleFlowToYourApp.zip)

@@ -27,6 +27,21 @@
     [self configUI];
 }
 
+- (void)viewWillLayoutSubviews
+{
+    if (@available(iOS 13.0, *)) {
+        if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleLight) {
+            NSLog(@"UIUserInterfaceStyleLight");
+        }else if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark){
+            NSLog(@"UIUserInterfaceStyleDark");
+        }else{
+            NSLog(@"UIUserInterfaceStyleUnspecified");
+        }
+    } else {
+
+    }
+}
+
 #pragma mark -- Action
 - (void)authorization
 {
