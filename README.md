@@ -79,6 +79,8 @@ Apple 保留随时以任何理由停用某个网站或 app 中的“通过 Apple
 
 1.  ASAuthorizationAppleIDButton.h 按钮类
 2. ASAuthorizationController 管理授权请求的控制器，并通过代理方法进行后续处理
+3. ASAuthorizationAppleIDProvider 基于用户的Apple ID授权用户，生成用户授权请求的一种机制
+4. ASAuthorizationPasswordRequest 基于钥匙串凭证生成请求的一种机制
 
 ## 参考资料
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D64788223B35DA200D42F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64788123B35DA200D42F39 /* AppDelegate.swift */; };
+		3D64788423B35DA200D42F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64788323B35DA200D42F39 /* SceneDelegate.swift */; };
+		3D64788623B35DA200D42F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64788523B35DA200D42F39 /* ViewController.swift */; };
+		3D64788923B35DA200D42F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D64788723B35DA200D42F39 /* Main.storyboard */; };
+		3D64788B23B35DA700D42F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D64788A23B35DA700D42F39 /* Assets.xcassets */; };
+		3D64788E23B35DA700D42F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D64788C23B35DA700D42F39 /* LaunchScreen.storyboard */; };
 		3DA457D223A0DD2B0078B294 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA457D123A0DD2B0078B294 /* AppDelegate.m */; };
 		3DA457D523A0DD2B0078B294 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA457D423A0DD2B0078B294 /* SceneDelegate.m */; };
 		3DA457D823A0DD2B0078B294 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA457D723A0DD2B0078B294 /* ViewController.m */; };
@@ -18,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D64787F23B35DA200D42F39 /* Swift-SignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-SignInWithApple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D64788123B35DA200D42F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D64788323B35DA200D42F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D64788523B35DA200D42F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D64788823B35DA200D42F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D64788A23B35DA700D42F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D64788D23B35DA700D42F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D64788F23B35DA700D42F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D64789323B35EA200D42F39 /* Swift-SignInWithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Swift-SignInWithApple.entitlements"; sourceTree = "<group>"; };
 		3DA457CD23A0DD2B0078B294 /* SignInWithAppleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithAppleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA457D023A0DD2B0078B294 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DA457D123A0DD2B0078B294 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D64787C23B35DA200D42F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DA457CA23A0DD2B0078B294 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +68,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D64788023B35DA200D42F39 /* Swift-SignInWithApple */ = {
+			isa = PBXGroup;
+			children = (
+				3D64789323B35EA200D42F39 /* Swift-SignInWithApple.entitlements */,
+				3D64788123B35DA200D42F39 /* AppDelegate.swift */,
+				3D64788323B35DA200D42F39 /* SceneDelegate.swift */,
+				3D64788523B35DA200D42F39 /* ViewController.swift */,
+				3D64788723B35DA200D42F39 /* Main.storyboard */,
+				3D64788A23B35DA700D42F39 /* Assets.xcassets */,
+				3D64788C23B35DA700D42F39 /* LaunchScreen.storyboard */,
+				3D64788F23B35DA700D42F39 /* Info.plist */,
+			);
+			path = "Swift-SignInWithApple";
+			sourceTree = "<group>";
+		};
 		3DA457C423A0DD2B0078B294 = {
 			isa = PBXGroup;
 			children = (
 				3DA457CF23A0DD2B0078B294 /* SignInWithAppleDemo */,
+				3D64788023B35DA200D42F39 /* Swift-SignInWithApple */,
 				3DA457CE23A0DD2B0078B294 /* Products */,
 				3DA457EA23A0E11B0078B294 /* Frameworks */,
 			);
@@ -59,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3DA457CD23A0DD2B0078B294 /* SignInWithAppleDemo.app */,
+				3D64787F23B35DA200D42F39 /* Swift-SignInWithApple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +132,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D64787E23B35DA200D42F39 /* Swift-SignInWithApple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D64789223B35DA700D42F39 /* Build configuration list for PBXNativeTarget "Swift-SignInWithApple" */;
+			buildPhases = (
+				3D64787B23B35DA200D42F39 /* Sources */,
+				3D64787C23B35DA200D42F39 /* Frameworks */,
+				3D64787D23B35DA200D42F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-SignInWithApple";
+			productName = "Swift-SignInWithApple";
+			productReference = 3D64787F23B35DA200D42F39 /* Swift-SignInWithApple.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3DA457CC23A0DD2B0078B294 /* SignInWithAppleDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA457E623A0DD300078B294 /* Build configuration list for PBXNativeTarget "SignInWithAppleDemo" */;
@@ -116,9 +172,13 @@
 		3DA457C523A0DD2B0078B294 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "贺文杰";
 				TargetAttributes = {
+					3D64787E23B35DA200D42F39 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					3DA457CC23A0DD2B0078B294 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -138,11 +198,22 @@
 			projectRoot = "";
 			targets = (
 				3DA457CC23A0DD2B0078B294 /* SignInWithAppleDemo */,
+				3D64787E23B35DA200D42F39 /* Swift-SignInWithApple */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D64787D23B35DA200D42F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D64788E23B35DA700D42F39 /* LaunchScreen.storyboard in Resources */,
+				3D64788B23B35DA700D42F39 /* Assets.xcassets in Resources */,
+				3D64788923B35DA200D42F39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DA457CB23A0DD2B0078B294 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +227,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D64787B23B35DA200D42F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D64788623B35DA200D42F39 /* ViewController.swift in Sources */,
+				3D64788223B35DA200D42F39 /* AppDelegate.swift in Sources */,
+				3D64788423B35DA200D42F39 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DA457C923A0DD2B0078B294 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +251,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3D64788723B35DA200D42F39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D64788823B35DA200D42F39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D64788C23B35DA700D42F39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D64788D23B35DA700D42F39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		3DA457D923A0DD2B0078B294 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -189,6 +286,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3D64789023B35DA700D42F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Swift-SignInWithApple/Swift-SignInWithApple.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F87FYPRFA8;
+				INFOPLIST_FILE = "Swift-SignInWithApple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hewenjie.allFunctions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_allFunctions;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D64789123B35DA700D42F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Swift-SignInWithApple/Swift-SignInWithApple.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F87FYPRFA8;
+				INFOPLIST_FILE = "Swift-SignInWithApple/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hewenjie.allFunctions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_allFunctions;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3DA457E423A0DD300078B294 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,6 +487,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D64789223B35DA700D42F39 /* Build configuration list for PBXNativeTarget "Swift-SignInWithApple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D64789023B35DA700D42F39 /* Debug */,
+				3D64789123B35DA700D42F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3DA457C823A0DD2B0078B294 /* Build configuration list for PBXProject "SignInWithAppleDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

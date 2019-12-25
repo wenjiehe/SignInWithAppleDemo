@@ -81,12 +81,12 @@
             request.requestedScopes = @[ASAuthorizationScopeFullName, ASAuthorizationScopeEmail];
             [mtbAry addObject:request];
         }
-        /*
+    
         if (passwordProvider) { //获取KeyChain中的登录信息 
             ASAuthorizationPasswordRequest *passwordRequest = [passwordProvider createRequest];
             [mtbAry addObject:passwordRequest];
         }
-        */
+        
          
         //一个控制器，用于管理创建的授权请求
         ASAuthorizationController *ac = [[ASAuthorizationController alloc] initWithAuthorizationRequests:mtbAry];
