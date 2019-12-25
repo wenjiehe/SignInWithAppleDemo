@@ -6,7 +6,7 @@
 > “通过 Apple 登录”的设计初衷就是为了让用户对自己的隐私感到放心。数据收集仅限于用户的姓名和电子邮件地址，而且即使用户更希望对自己的邮件地址保密，Apple 的私密电子邮件中继转发服务也能让他们收到相关电子邮件。Apple 不会跟踪用户与您 app 的交互情况。
 
 2. 内置安全性
-> 使用“通过 Apple 登录”的每个帐户均默认受到双重认证保护。在 Apple 设备上，用户会保持登录状态，并可以随时使用面容 ID 或触控 ID 重新进行身份验证。
+> 使用“通过 Apple 登录”的每个帐户均默认受到[双重认证保护](https://support.apple.com/en-us/HT204915)。在 Apple 设备上，用户会保持登录状态，并可以随时使用面容 ID 或触控 ID 重新进行身份验证。
 
 3. 处处可用
 > iOS、macOS、tvOS 和 watchOS 都原生支持“通过 Apple 登录”。此外，该功能可在任何浏览器中使用，这意味着您可以将它部署在您的网站上以及在其他平台上运行的 app 版本中。
@@ -20,13 +20,15 @@
 *  iOS 13及以上
 * Mac OS 10.14.4及以后
 
+## 证书配置
+
+> 登录[apple开发官网](https://developer.apple.com),进入Certificates,Identifiers & Profiles,勾选Sign In With Apple,导出证书即可
+
 ## 工程配置
 
 * TARGETS->Signing & Capabilities->Capability->Sign In With Apple
 * TARGETS->Build Phases->Link Binary With Libraries->AuthenticationServices.framework
 * TARGETS->General->Frameworks,Libraries,and Embedded Content->AuthenticationServices.framework->Do Not Embed
-
-## 证书配置
 
 ## 禁止使用情形
 
@@ -53,13 +55,30 @@ Apple 保留随时以任何理由停用某个网站或 app 中的“通过 Apple
 
 ## 跨平台
 
-* iOS、macOS、tvOS、watchOS、网页()
+* iOS、macOS、tvOS、watchOS、网页(app必须在App Store上架)
 
 ## 实现流程
 
+1. 设置AuthenticationServices相关类进行布局，添加相应的授权处理
+2. 获取授权码
+3. 验证
+4. 处理Sign In With Apple授权状态变化
+5. 服务端拿到移动端获取到的JWT凭证去校验,[相关API](https://developer.apple.com/documentation/signinwithapplerestapi/generate_and_validate_tokens)
+
+## 相关问题
+
+1. 停止App使用Sign In With Apple的方式
+> 设置->密码与安全性->使用您Apple ID的App->找到对应的App->停止使用Apple ID
+
+2. 如何跟服务端交互，以及服务端如何和apple服务器交互
+> 苹果开发官网创建privateKey,把私钥下载下来，并保存好，注意，私钥只能下载一次,Apple在服务器验证时候有两个接口，一个是获取[Public Key](https://developer.apple.com/documentation/signinwithapplerestapi/fetch_apple_s_public_key_for_verifying_token_signature),一个是验证[token](https://developer.apple.com/documentation/signinwithapplerestapi/generate_and_validate_tokens)。
+根据Public Key对移动端获取到的[identityToken](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)进行解码，以获取header及payload。
+
+
 ## API介绍
 
-1. #import <AuthenticationServices/ASAuthorizationAppleIDButton.h> 按钮类
+1.  ASAuthorizationAppleIDButton.h 按钮类
+2. ASAuthorizationController 管理授权请求的控制器，并通过代理方法进行后续处理
 
 ## 参考资料
 
@@ -69,4 +88,5 @@ Apple 保留随时以任何理由停用某个网站或 app 中的“通过 Apple
 * [Sign In With Apple官方Swift源码](https://docs-assets.developer.apple.com/published/8f9ca51349/AddingTheSignInWithAppleFlowToYourApp.zip)
 * [Human Interface Guidelines-设计规范](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/overview/)
 * [证书配置说明-英文](https://help.apple.com/developer-account/?lang=en#/devde676e696)
+* [证书配置及服务端校验-教程](https://developer.okta.com/blog/2019/06/04/what-the-heck-is-sign-in-with-apple)
 
